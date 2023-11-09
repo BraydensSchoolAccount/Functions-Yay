@@ -30,6 +30,7 @@ def favorite_book(title):
 
     Args:
         title (string): The title of your favorite book
+    no return
     """
     print(f"{title.title()} is probably not in stock. Leave. :)")
 
@@ -49,15 +50,15 @@ def phone_number(number):
 
     Args:
         number (int): The phone number of the user
+    no return
     """
     num_as_string = str(number)
     # Basic checks to see if it's 7 or 10 digits
     if len(num_as_string) == 7:
         print(f"Thank you for submitting {num_as_string[:3]}-{num_as_string[3:]} as your phone number! We are NOT selling them to spam call companies as we speak!")
-        return
     if len(num_as_string) == 10:
         print(f"Thank you for submitting ({num_as_string[:3]}) {num_as_string[3:6]}-{num_as_string[6:]} as your phone number! We are NOT selling them to spam call companies as we speak!")
-        return
+        
 
 next_exercise("Hello world!")
 
