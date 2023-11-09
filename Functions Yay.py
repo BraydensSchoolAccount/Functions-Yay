@@ -56,9 +56,11 @@ def phone_number(number):
     # Basic checks to see if it's 7 or 10 digits
     if len(num_as_string) == 7:
         print(f"Thank you for submitting {num_as_string[:3]}-{num_as_string[3:]} as your phone number! We are NOT selling them to spam call companies as we speak!")
+        return
     if len(num_as_string) == 10:
         print(f"Thank you for submitting ({num_as_string[:3]}) {num_as_string[3:6]}-{num_as_string[6:]} as your phone number! We are NOT selling them to spam call companies as we speak!")
-        
+        return
+    print("The phone number you submitted is invalid")
 
 next_exercise("Hello world!")
 
@@ -74,5 +76,6 @@ print(f"That squared is {square(float(input('What number do you want to square? 
 
 next_exercise("You used to call me on my cellphone")
 
-phone_number(1234567)
-phone_number(1234567890)
+phone_number(int(input("What is your phone number? (With or without area code) >  ")))
+
+phone_number(int(input("What is your phone number? (With or without area code) >  ")))
